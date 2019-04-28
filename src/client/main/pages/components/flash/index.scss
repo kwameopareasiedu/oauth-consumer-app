@@ -1,0 +1,48 @@
+#flash-container {
+    position: fixed;
+    top: 65px;
+    right: 25px;
+    height: auto;
+    width: 250px;
+    z-index: 1050;
+
+    .alert {
+        position: relative;
+        border-radius: 3px;
+        border: 2px solid;
+        border-left: 10px solid;
+        background-color: white;
+        color: #555;
+
+        button.close {
+            position: absolute;
+            top: 0;
+            right: 4px;
+            opacity: 1;
+        }
+    }
+
+    .alert-danger {
+        border-color: darken(red, 10%);
+
+        button.close {
+            color: darken(red, 10%);
+        }
+    }
+
+    .alert-success {
+        border-color: green;
+
+        button.close {
+            color: green;
+        }
+    }
+
+    .alert-info {
+        border-color: #4882f5;
+
+        button.close {
+            color: #4882f5;
+        }
+    }
+}
